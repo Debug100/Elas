@@ -1,0 +1,202 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #fff;
+    background-image: url(../images/final-bg-new\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin: 0;
+}
+
+@media (max-width:991px) {
+    body {
+        background-image: url(../images/success-bg-m-new.png)
+    }
+}
+
+
+
+/* End Global Rules */
+/* start header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 104px;
+}
+
+.header .logo img:first-child {
+    position: absolute;
+    width: 300px;
+}
+
+
+.header .logo img:last-child {
+    width: 364px;
+}
+
+@media (max-width:767px) {
+    .header .logo {
+        margin-top: 65px;
+        margin-bottom: 61px;
+    }
+
+    .header .logo img:first-child {
+        width: 165px;
+    }
+
+    .header .logo img:last-child {
+        width: 200px;
+    }
+}
+
+.header .text {
+    text-align: center;
+    color: white;
+}
+
+.header .text p:first-child {
+    font-size: 22px;
+}
+
+.header .text h1 {
+    margin: 34px 0;
+    font-size: 38px;
+    word-spacing:-3px;
+}
+
+.header .text h1 span:nth-child(1) {
+    background: linear-gradient(349deg, #7f2aff -130%, #22f8e9 135%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .text h1 span:nth-child(2) {
+    background: linear-gradient(349deg, #7f2aff, #22f8e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .text p:last-child {
+    font-size: 25px;
+}
+
+@media (min-width:768px) {
+    .header .text h1 span:nth-child(1)::before {
+        content: "🎉";
+        -webkit-text-fill-color: red;
+    }
+
+    .header .text h1 span:nth-child(2)::after {
+        content: "🎊";
+        -webkit-text-fill-color: red;
+    }
+}
+
+@media (max-width:767px) {
+
+    .header .text p:first-child {
+        font-size: 17px;
+    }
+
+    .header .text h1 {
+        text-wrap: nowrap;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .header .text h1 span:nth-child(1) {
+        display: block;
+    }
+
+    .header .text h1 span:nth-child(1)::before {
+        content: "🎉";
+        -webkit-text-fill-color: red;
+    }
+
+    .header .text h1 span:nth-child(1)::after {
+        content: "🎊";
+        -webkit-text-fill-color: red;
+    }
+
+}
+
+/* End header */
+/* Stat component */
+.component{
+    text-align:center;
+}
+.component .link p:nth-of-type(1){
+    word-spacing:-1px;
+    font-size:17px;
+}
+.component .link p:nth-of-type(2){
+background-color: #fff;
+width: 570px;
+height: 75px;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+margin:0 auto;
+}
+.component .link p:nth-of-type(2) span{
+    color: #2f80ed;
+    cursor: pointer;
+    font-size:20px;
+    font-weight: 700;
+    text-transform:uppercase;
+    transition:.3s;
+}
+
+.component .link p:nth-of-type(2) span:hover{
+    color: #22f8e9;
+}
+
+.component .link  p:nth-of-type(3){
+    font-size: 25px;
+    margin-top: 45px;
+    word-spacing: -2px;
+}
+
+.component .QR-code p{
+    color:#22f8e9;
+    word-spacing:-2px;
+}
+
+.component img{
+    width: 135px;
+    border: 4px solid #22f8e9;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: white;
+}
+/* End component */
+/* Start footer */
+.footer p{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:50px;
+}
+/* End footer */

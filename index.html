@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elsa</title>
+    <!-- Main Template css File -->
+    <link rel="stylesheet" href="css/Elsa.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font Awesom Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start headr -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/symbol-AI-10.png" alt="" />
+          <img src="images/visual-2.gif" alt="" />
+        </div>
+        <div class="text">
+          <p>Your Personal English AI Toutor</p>
+          <h1>
+            <span>Congrats!</span>
+            <span>You Are On The Waitlist!</span>
+          </h1>
+          <p>Wanna skip the line?</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- start component -->
+    <div class="component">
+      <div class="link">
+        <p>
+          Invite Your friends and family to join the waitlist using the link
+          below.
+        </p>
+        <p>
+          <a href="#" id="copyLink"></a>
+          <span id="copyText">Copy</span>
+        </p>
+        <p>Speak English Confidently With ELSA AI today</p>
+      </div>
+      <div class="QR-code">
+        <p>Scan the QR code to download the app</p>
+        <img src="images/download.png" alt="">
+      </div>
+    </div>
+    <!--  End component -->
+    <!-- Start footer -->
+    <div class="footer">
+      <p>	&copy; 2023 ELSA. All Rights Reserved | Privacy</p>
+    </div>
+    <!-- End footer -->
+    <script>
+      document
+        .getElementById("copyText")
+        .addEventListener("click", function () {
+          var link = document.getElementById("copyLink").getAttribute("href");
+          navigator.clipboard.writeText(link).then(function () {
+            alert("Link copied to clipboard!");
+          });
+        });
+    </script>
+  </body>
+</html>
